@@ -80,18 +80,16 @@ console.log('Should find a value in the barray...', find(9, barray));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
+function isFirstLetter(letter, string){
 
 }
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
+
   // TODO: loop to add items
-  return sum;
-}
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -102,3 +100,33 @@ function sumAll( ) {
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+/*
+Mubashir was walking through a straight street with exactly n identical houses on both sides. House numbers in the street look like this:
+
+1 |   | 6
+
+3 |   | 4
+
+5 |   | 2
+He noticed that Even numbered houses increases on the right while
+Odd numbered houses decreases on the left.
+Create a function that takes a house number house and
+length of the street n and returns the house number on the opposite side.
+
+Examples
+oppositeHouse(1, 3) ➞ 6
+
+oppositeHouse(2, 3) ➞ 5
+
+oppositeHouse(3, 5) ➞ 8
+*/
+
+function oppositeHouse(house, n) {
+	let oppositeHouse = ((2*n)-(house -1))
+	return oppositeHouse
+}
+
+console.log('The house opposite is:',oppositeHouse(1, 3));
+console.log('The house opposite is:',oppositeHouse(2, 3));
+console.log('The house opposite is:',oppositeHouse(4, 5));
