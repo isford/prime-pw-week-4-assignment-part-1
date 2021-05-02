@@ -14,10 +14,10 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, for example 'Hello, Jo!'
 function helloName( name ) {
-  return 'Hello Ian';
+  return `Hello ${name}`;
 }
 // Remember to call the function to test
-console.log('Test-should say "Hello Ian"', helloName());
+console.log('Test-should say "Hello Ian"', helloName('Ian'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {
@@ -40,8 +40,9 @@ function isPositive( number ) {
   if ( number > 0 ){
     return true;
   }
-  else
+  else{
     return false;
+  }
 }
 console.log('Test- Should return true or false', isPositive(9));
 
